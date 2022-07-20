@@ -90,14 +90,14 @@ database.updateWhereQuery('users', 'id', '45657', 'name', 'John').then(function(
 You need a `.env` file with the following information in your project root directory:
 
 ```env
-CONNECTIONLIMIT=100
-HOST=host
-PORT=port
-USER=user
-PASSWORD=password
-DATABASE=database
+SQLS_CONNECTIONLIMIT=100
+SQLS_HOST=host
+SQLS_PORT=port
+SQLS_USER=user
+SQLS_PASSWORD=password
+SQLS_DATABASE=database
 ```
 
 # Contact
 
-For question, suggestions, ideas etc, feel free to join my [Discord server](https://discord.gg/XREwwMM9Bv).
+For question, suggestions, ideas etc, feel free to join my [Discord server](https://discord.gg/XREwwMM9Bv), or create an issue on [GitHub](https://github.com/emiratee/sql-simplified).

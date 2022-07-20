@@ -1,12 +1,12 @@
 require('dotenv').config();
 const mysql = require('mysql');
 const pool = mysql.createPool({
-    connectionLimit:        process.env.CONNECTIONLIMIT,
-    host:                   process.env.HOST,
-    port:                   process.env.PORT,
-    user:                   process.env.USER,
-    password:               process.env.PASSWORD,
-    database:               process.env.DATABASE,
+    connectionLimit:        process.env.SQLS_CONNECTIONLIMIT,
+    host:                   process.env.SQLS_HOST,
+    port:                   process.env.SQLS_PORT,
+    user:                   process.env.SQLS_USER,
+    password:               process.env.SQLS_PASSWORD,
+    database:               process.env.SQLS_DATABASE,
     multipleStatements:     true
 });
 

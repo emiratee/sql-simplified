@@ -1,6 +1,6 @@
 {
   "name": "sql-simplified",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "MySQL query functions, simplified, efficient and easy to implement.",
   "main": "index.js",
   "scripts": {
@@ -14,9 +14,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SCDerox/discord-inv.git"
+    "url": "git+https://github.com/emiratee/sql-simplified"
   },
+  "bugs": {
+		"url": "https://github.com/emiratee/sql-simplified/issues"
+	},
   "author": "emirate",
+  "maintainers": [
+    "emirate <erik@cornstudios.de>"
+  ],
   "license": "MIT",
   "homepage": "https://cornstudios.de",
   "dependencies": {
