@@ -1,0 +1,22 @@
+{
+  "name": "sql-simplified",
+  "version": "0.0.10",
+  "description": "MySQL query functions, simplified, efficient and easy to implement.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mysql",
+    "sql",
+    "backend",
+    "cornstudios"
+  ],
+  "author": "emirate",
+  "license": "MIT",
+  "homepage": "https://cornstudios.de",
+  "dependencies": {
+    "mysql": "2.18.1",
+    "dotenv": "16.0.1"
+  }
+}
