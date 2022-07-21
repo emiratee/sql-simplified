@@ -32,57 +32,12 @@ database.customQuery(`SELECT * FROM customers WHERE customerId = '1234'`).then(f
     */
 })
 
-
-database.updateWhereQuery('users', 'id', '45657', 'name', 'John').then(function(result) {
-
-//SQL Query will be: `UPDATE users SET id = 45657 WHERE name = 'John'`
-
-    console.log(result);
-    /* Output:
-
-    OkPacket {
-        fieldCount: 0,
-        affectedRows: 1,
-        insertId: 0,
-        serverStatus: 2,
-        warningCount: 0,
-        message: '(Rows matched: 1  Changed: 1  Warnings: 0',
-        protocol41: true,
-        changedRows: 1
-    }
-    */
-})
-
 ```
 
 # Functions
 ```js
 .customQuery(query)
 // SQL Syntax: `YOUR OWN SYNTAX`
-
-.selectQuery(column, table)
-// SQL Syntax: `SELECT column FROM table`
-
-.selectWhereQuery(column, table, where, where_value)
-// SQL Syntax: `SELECT column FROM table WHERE where = 'where_value'`
-
-.selectGroupConcatSeperatorQuery(column, seperator, as_value, table)
-// SQL Syntax: `SELECT GROUP_CONCAT(column SEPERATOR 'seperator') as "as_value" FROM table`
-
-.insertQuery(table, column, value)
-// SQL Syntax: `INSERT INTO table (column/s) VALUES (value/s)`
-
-.updateQuery(table, column, column_value)
-// SQL Syntax: `UPDATE table SET column = 'column_value'`
-
-.updateWhereQuery(table, column, column_value, where, where_value)
-// SQL Syntax: `UPDATE table SET column = 'column_value' WHERE where = 'where_value'`
-
-.updateConcatWhereQuery(table, column, column_value, where, where_value)
-// SQL Syntax: `UPDATE table SET column = CONCAT(column, 'column_value') WHERE where = 'where_value'`
-
-.deleteQuery(table, where, where_value)
-// SQL Syntax: `DELETE FROM table WHERE where = 'where_value'`
 ```
 
 # Requirements
